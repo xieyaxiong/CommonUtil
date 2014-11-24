@@ -7,13 +7,17 @@ public class QueueTest {
 	
 	public static void main(String[] args) {
 		ArrayBlockingQueue<String> blockingQueue=new ArrayBlockingQueue<String>(1000, true);
+//		for(int i=0;i<10000;i++){
+//			String string=blockingQueue.poll();
+//			System.out.println(string+"====="+blockingQueue.size());
+//		}
 		
-		for(int i=0;i<1;i++){
-			CustomerThread customerThread=new CustomerThread(blockingQueue);
-			ProduceThread produceThread=new ProduceThread(blockingQueue);
-			customerThread.start();
-			produceThread.start();
-		}
+//		for(int i=0;i<1;i++){
+//			CustomerThread customerThread=new CustomerThread(blockingQueue);
+//			ProduceThread produceThread=new ProduceThread(blockingQueue);
+//			customerThread.start();
+//			produceThread.start();
+//		}
 	}
 
 }
