@@ -1,0 +1,2 @@
+2014-11-24 16:13:46  [ com.xyx.log4j.Test.main(Test.java:11) ] - [ DEBUG ]   debug 
+2014-11-24 16:13:46  [ com.xyx.log4j.Test.main(Test.java:12) ] - [ ERROR ]   error 

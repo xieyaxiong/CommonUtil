@@ -6,7 +6,9 @@ import org.apache.log4j.PropertyConfigurator;
 public class Test {
 	
 	public static void main(String[] args) {
-		 PropertyConfigurator.configure( "C:/Users/Administrator/git/CommonUtil/src/log4j.properties" );
+		String path=Test.class.getResource("/log4j.properties").getPath();
+		 PropertyConfigurator.configure( path );
+		 System.out.println(path);
 	        Logger logger  =  Logger.getLogger(Test. class );
 	        logger.debug( " debug " );
 	        logger.error( " error " );
